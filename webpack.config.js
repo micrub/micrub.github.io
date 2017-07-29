@@ -6,7 +6,6 @@ const fs = require('fs');
 
 let CopyWebpackPlugin = require('copy-webpack-plugin');
 let WebpackBeforeBuildPlugin = require('before-build-webpack');
-//let WebpackShellPlugin = require('webpack-shell-plugin');
 
 let packageJson = require('./package.json');
 
@@ -19,7 +18,7 @@ function cleanPackageJson(pkg) {
 }
 
 const copyOptions = [
-  {from : "resources/assets/"}
+  {from : "resources/assets/"},
 ];
 
  module.exports = {
@@ -29,6 +28,11 @@ const copyOptions = [
          filename: 'index.js',
      },
      plugins: [
+       new WebpackBeforeBuildPlugin(function(compiler, callback) {
+         cleanPackageJson(packageJson);
+         callback(); //don't call it if you do want to stop compilation
+       }),
+       new CopyWebpackPlugin(copyOptions)
      ],
      module: {
          loaders: [{
