@@ -427,7 +427,7 @@ module.exports = function(bitmap, value){
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1 id=\"home-page\">Home page</h1>\n<ul>\n<li>one</li>\n<li><a href=\"/content/vim/\">VIM</a></li>\n<li><a href=\"/content/git/\">GIT</a></li>\n</ul>\n<h2 id=\"typographic-replacements\">Typographic replacements</h2>\n<p>Enable typographer option to see result.</p>\n<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>\n";
+module.exports = "<section><h1>Home page</h1>\n<ul>\n<li>one</li>\n<li><a href=\"/content/vim/\">VIM</a></li>\n<li><a href=\"/content/git/\">GIT</a></li>\n</ul>\n<h2>Typographic replacements</h2>\n<p>Enable typographer option to see result.</p>\n<p>© © ® ® ™ ™ § § ±</p>\n</section>\n"
 
 /***/ })
 /******/ ]);
