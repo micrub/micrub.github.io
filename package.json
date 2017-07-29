@@ -5,17 +5,24 @@
   "repository": "git@github.com:micrub/micrub.github.io.git",
   "author": "Michael Rubanov <mrubanov@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "babel-runtime": "^6.25.0"
+  },
   "scripts": {
     "test": "$(npm bin)/mocha",
     "test:watch": "$(npm bin)/mocha --reporter min --watch",
     "build": "$(npm bin)/webpack"
   },
   "devDependencies": {
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
     "before-build-webpack": "^0.1.0",
     "chai": "^4.1.0",
     "config": "^1.26.1",
     "copy-webpack-plugin": "^4.0.1",
+    "debug": "^2.6.8",
     "markdown-it": "^8.3.1",
     "markdownit-loader": "^2.0.0",
     "mocha": "^3.4.2",

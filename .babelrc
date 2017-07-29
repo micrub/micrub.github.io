@@ -8,6 +8,7 @@
                 "modules": "commonjs",
                 "spec": false,
                 "tragets": {
+                    "browser" : ["> 2%"],
                     "node": "current"
                 },
                 "useBuiltIns": false
