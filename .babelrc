@@ -1,0 +1,20 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "debug": true,
+                "loose": false,
+                "modules": "amd",
+                "spec": false,
+                "tragets": {
+                    "browsers":["> 5%", "last 3 versions"]
+                },
+                "useBuiltIns": false
+            }
+        ]
+    ],
+    "plugins": [
+            "transform-runtime"
+    ]
+}
