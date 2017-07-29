@@ -1,6 +1,6 @@
 {
   "name": "micrub.github.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "git@github.com:micrub/micrub.github.io.git",
   "author": "Michael Rubanov <mrubanov@gmail.com>",
@@ -22,9 +22,12 @@
     "chai": "^4.1.0",
     "config": "^1.26.1",
     "copy-webpack-plugin": "^4.0.1",
+    "html-loader": "^0.5.0",
     "markdown-it": "^8.3.1",
+    "markdownit-loader": "^2.0.0",
     "mocha": "^3.4.2",
     "mocha-clean": "^1.0.0",
+    "raw-loader": "^0.5.1",
     "simple-git": "^1.75.0",
     "webpack": "^3.4.1"
   }

@@ -47,6 +47,26 @@ const copyOptions = [
                  require("babel-plugin-transform-async-to-generator")
                ]
              }
-         }]
+         },{
+
+           test: /\.md$/,
+           use: [
+             {
+               loader: "raw-loader"
+             },
+             {
+               loader: "markdownit-loader",
+               options: {
+                 // enable everything
+                 html: true,
+                 linkify: true,
+                 typographer: true
+               }
+             }
+           ]
+         }
+
+         ]
+
      }
  }
