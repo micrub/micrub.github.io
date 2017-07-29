@@ -23,6 +23,7 @@ const copyOptions = [
 
  module.exports = {
      entry: './src/index.js',
+     watch: false,
      output: {
          path: path.resolve(__dirname, OUT_DIR),
          filename: 'index.js',

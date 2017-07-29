@@ -133,7 +133,7 @@ module.exports = function(exec){
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(7), __webpack_require__(8), __webpack_require__(21)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _classCallCheck2, _createClass2, HomePage) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(7), __webpack_require__(8), __webpack_require__(21), __webpack_require__(22)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _classCallCheck2, _createClass2, HOMEPAGE, VM) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -155,7 +155,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
       key: 'render',
       value: function render() {
         this.container = document.getElementById("container");
-        this.container.innerHTML = HomePage;
+        this.container.innerHTML = HOMEPAGE + VM;
       }
     }]);
 
@@ -428,6 +428,12 @@ module.exports = function(bitmap, value){
 /***/ (function(module, exports) {
 
 module.exports = "<section><h1>Home page</h1>\n<ul>\n<li>one</li>\n<li><a href=\"/content/vim/\">VIM</a></li>\n<li><a href=\"/content/git/\">GIT</a></li>\n</ul>\n<h2>Typographic replacements</h2>\n<p>Enable typographer option to see result.</p>\n<p>© © ® ® ™ ™ § § ±</p>\n</section>\n"
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports) {
+
+module.exports = "<section><h1>GIT</h1>\n</section>\n"
 
 /***/ })
 /******/ ]);

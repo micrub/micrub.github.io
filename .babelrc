@@ -5,15 +5,16 @@
             {
                 "debug": true,
                 "loose": false,
-                "modules": "amd",
+                "modules": "commonjs",
                 "spec": false,
                 "tragets": {
-                    "browsers":["> 5%", "last 3 versions"]
+                    "node": "current"
                 },
                 "useBuiltIns": false
             }
         ]
     ],
+    "ignore": ["*.md"],
     "plugins": [
             "transform-runtime"
     ]

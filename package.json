@@ -6,7 +6,7 @@
   "author": "Michael Rubanov <mrubanov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0"
+    "babel-runtime": "^6.25.0"
   },
   "scripts": {
     "test": "$(npm bin)/mocha",
@@ -16,8 +16,8 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
-    "babel-runtime": "^6.25.0",
     "before-build-webpack": "^0.1.0",
     "chai": "^4.1.0",
     "config": "^1.26.1",
@@ -27,6 +27,7 @@
     "markdownit-loader": "^2.0.0",
     "mocha": "^3.4.2",
     "mocha-clean": "^1.0.0",
+    "mocha-webpack": "^0.7.0",
     "raw-loader": "^0.5.1",
     "simple-git": "^1.75.0",
     "webpack": "^3.4.1"

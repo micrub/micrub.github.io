@@ -1,10 +1,11 @@
 
-let HomePage = require('./../content/index.md');
+const HOMEPAGE = require('./../content/index.md');
+const VM = require('./../content/git/index.md');
 class Core {
 
   render() {
     this.container = document.getElementById("container");
-    this.container.innerHTML = HomePage;
+    this.container.innerHTML = HOMEPAGE + VM;
   }
 
   constructor() {
