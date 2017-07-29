@@ -4,6 +4,21 @@ const OUT_DIR = 'public/';
 const path = require('path');
 const fs = require('fs');
 
+let MIT = require('markdown-it');
+let m = new MIT();
+
+let marked = require('marked');
+
+//let renderer = {
+  //text: () => {},
+    //paragraph: (i)=>{ return m.render(i)},
+    //heading: (err, level, text)=>{ return m.render("#".repeat(level) + " " + text)},
+    //listitem: (i)=>{ return m.render(i)},
+    //list: (i)=>{ return m.render(i)},
+    //link: (i)=>{ return m.render(i)},
+//}
+//let renderer = new marked.Renderer();
+
 let CopyWebpackPlugin = require('copy-webpack-plugin');
 let WebpackBeforeBuildPlugin = require('before-build-webpack');
 
@@ -47,6 +62,31 @@ const copyOptions = [
                  require("babel-plugin-transform-async-to-generator")
                ]
              }
-         }]
+         },{
+
+           test: /\.md$/,
+           use: [
+             {
+               loader: "html-loader"
+             },
+             {
+               loader: "markdown-loader",
+               options: {
+                 /* your options here */
+                 //renderer,
+                 smartypants: true,
+                 pedantic: true
+                 //renderer: {
+                   //text : t => { return "'" + t + "'"; },
+                   //heading : t => t,
+                   //paragraph : t => t,
+                 //}
+               }
+             }
+           ]
+         }
+
+         ]
+
      }
  }

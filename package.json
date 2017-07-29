@@ -6,7 +6,8 @@
   "author": "Michael Rubanov <mrubanov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0"
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "marked": "^0.3.6"
   },
   "scripts": {
     "test": "$(npm bin)/mocha",
@@ -22,7 +23,10 @@
     "chai": "^4.1.0",
     "config": "^1.26.1",
     "copy-webpack-plugin": "^4.0.1",
+    "html-loader": "^0.5.0",
     "markdown-it": "^8.3.1",
+    "markdown-loader": "^2.0.1",
+    "marked": "^0.3.6",
     "mocha": "^3.4.2",
     "mocha-clean": "^1.0.0",
     "simple-git": "^1.75.0",
