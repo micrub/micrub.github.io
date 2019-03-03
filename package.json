@@ -1,34 +1,20 @@
 {
   "name": "micrub.github.io",
-  "version": "1.1.0",
+  "version": "0.0.1",
+  "description": "",
   "main": "index.js",
-  "repository": "git@github.com:micrub/micrub.github.io.git",
-  "author": "Michael Rubanov <mrubanov@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0"
-  },
   "scripts": {
-    "test": "$(npm bin)/mocha",
-    "test:watch": "$(npm bin)/mocha --reporter min --watch",
-    "build": "$(npm bin)/webpack"
+    "start" : "http-server public/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-loader": "^7.1.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-runtime": "^6.25.0",
-    "before-build-webpack": "^0.1.0",
-    "chai": "^4.1.0",
-    "config": "^1.26.1",
-    "copy-webpack-plugin": "^4.0.1",
-    "html-loader": "^0.5.0",
-    "markdown-it": "^8.3.1",
-    "markdownit-loader": "^2.0.0",
-    "mocha": "^3.4.2",
-    "mocha-clean": "^1.0.0",
-    "raw-loader": "^0.5.1",
-    "simple-git": "^1.75.0",
-    "webpack": "^3.4.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micrub/micrub.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micrub/micrub.github.io/issues"
+  },
+  "homepage": "https://github.com/micrub/micrub.github.io#readme"
 }
